@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BibliotecaDeClases
 {
-    public class Cuadrado:Rectangulo
+    public sealed class Cuadrado:Rectangulo
     {
         public override string Dibujar()
         {

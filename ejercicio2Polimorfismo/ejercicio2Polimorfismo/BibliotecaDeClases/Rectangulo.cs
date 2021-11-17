@@ -8,7 +8,7 @@ namespace BibliotecaDeClases
 {
     public class Rectangulo:Figura
     {
-        public int _base; // reveer esto tipo de acceso, deberia ser privado pero cuando voy al tipo Cuadrado me genera errores en el constructor de Cuadrado por el tipo de acceso del atributo
+        protected int _base; // reveer esto tipo de acceso, deberia ser privado pero cuando voy al tipo Cuadrado me genera errores en el constructor de Cuadrado por el tipo de acceso del atributo
 
         public int _Base
         {
@@ -30,7 +30,7 @@ namespace BibliotecaDeClases
 
         public override string Dibujar()
         {
-            return base.Dibujar() + "rectangulo";
+            return "Dibujando un rectangulo...";
         }
 
         public override double CalcularPerimetro()

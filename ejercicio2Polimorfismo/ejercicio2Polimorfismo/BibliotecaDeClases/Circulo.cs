@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BibliotecaDeClases
 {
-    public class Circulo:Figura
+    public sealed class Circulo:Figura
     {
         private int radio;
 
@@ -22,8 +22,8 @@ namespace BibliotecaDeClases
 
         public override string Dibujar()
         {
-            return base.Dibujar() + "circulo";
-        }
+            return "Dibujando un circulo...";
+;        }
 
         public override double CalcularSuperficie()
         {

@@ -21,11 +21,11 @@ namespace Consola
             foreach (Figura figura in figuras)
             {
                 Console.WriteLine($"--------FIGURA----------");
-                Console.WriteLine($"Tipo:{figura.GetType()}");
+                Console.WriteLine($"Tipo:{figura.GetType().Name}");
                 Console.WriteLine(figura.Dibujar());
                 if (figura == rectangulo || figura == cuadrado)
                 {
-                    Console.WriteLine($"Base:{rectangulo._base}");
+                    Console.WriteLine($"Base:{rectangulo._Base}");
                     Console.WriteLine($"Altura:{rectangulo.altura}");
                 }
                 else if (figura == circulo)
